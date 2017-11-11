@@ -1,0 +1,226 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is brown.
+ *
+ * This theme is Copyright (C) 2012-2013 Owen Versteeg, http://owenversteeg.com - it is MIT licensed.
+ */
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background-color: #fff;
+  color: #435162;
+}
+::selection {
+  background: #26351c;
+  text-shadow: none; 
+}
+.reveal {
+  font-family:'Avenir Next', sans-serif;
+  font-size: 32px;
+  color: #435162;
+  line-height: 48px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*********************************************
+ * REVEAL ELEMENT OVERRIDES
+ *********************************************/
+.reveal blockquote,
+.reveal pre {
+  background: none;
+  box-shadow: none;
+}
+.reveal ul {
+  list-style: none;
+  margin-left: -48px;
+}
+.reveal ul li {
+  margin-bottom: 24px;
+  background-image: url(../../images-theme/dot.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 14px;
+  padding-left: 48px;  
+}
+.reveal pre {
+  width: 100%;
+}
+.reveal pre code {
+  max-height:500px;
+}
+.reveal .slides {
+  text-align: left;
+}
+.reveal .title-subtitle h3 {
+  margin-bottom: 12px;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 36px 0;
+  font-style: italic;
+  font-weight:700;
+}
+.reveal h1,
+.reveal h2 {
+  font-size: 86px;
+  line-height: 96px;
+}
+.reveal h3 {
+  color: #000;
+  font-size: 48px;
+  line-height: 60px;
+}
+.pp-title h1,
+.pp-title h2,
+.pp-title h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.pp-title {
+  text-align: center;
+}
+.reveal .divider {
+  margin: 48px auto;
+  width: 60px;
+  height: 4px;
+  background-color: #6CF0EA;
+}
+.pp-title .pp-title-logo-big {
+  width:400px;
+  fill: #fff;
+}
+.pp-title .pp-title--logo {
+  fill:white;
+  width: 135px;
+  position: absolute;
+  right: 84px;
+  bottom: 60px;
+  display: none;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  font-weight: 700;
+  color: #435162;
+  text-decoration: underline;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #435162;
+  text-shadow: none;
+  border: none; }
+
+.pp-title a:not(.image) {
+  font-weight: 700;
+  font-size: 24px;
+  font-style: italic;  
+  color: #fff;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; 
+}
+
+.pp-title a:not(.image):hover {
+  color: #eee;
+  text-shadow: none;
+  border: none; 
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #25211c; }
+
+.reveal .block {
+  display: block;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 24px 0px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; 
+}
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #51483d;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); 
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: rgba(0, 0, 0, 0.2); }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: rgba(0, 0, 0, 0.2); }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: rgba(0, 0, 0, 0.2); }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: rgba(0, 0, 0, 0.2); }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: rgba(0, 0, 0, 0.4); }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: rgba(0, 0, 0, 0.4); }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: rgba(0, 0, 0, 0.4); }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: rgba(0, 0, 0, 0.4); }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: #6CF0EA; 
+  height: 6px
+}
+.reveal .controls div.navigate-right {
+  border-left-width: 16px;
+}
+.reveal .controls div.navigate-left {
+  border-right-width: 16px;
+}
+
+.reveal .progress span {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
